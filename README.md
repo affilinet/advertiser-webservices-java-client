@@ -1,9 +1,8 @@
-# Example Java Client affilinet Advertiser Webservices
+# Example Java Client affilinet OrderManagement Webservice
 
-This is an example implementation for a Java advertiser webservices client, for the affilinet infrastructure.
+This is an example implementation for a Java advertiser webservices client for the affilinet OrderManagement Webservice for advertisers.
 
-If you want to use this for managing your advertiser account and transactions,
-be assure:
+If you want to use this for managing your advertiser account and transactions, be assure:
 - You have a valid user name and password credentials,
 - you program is not on hold, deleted or otherwise inactive
 
