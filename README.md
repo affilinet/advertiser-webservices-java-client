@@ -7,10 +7,11 @@ If you want to use this for managing your advertiser account and transactions, b
 - you program is not on hold, deleted or otherwise inactive
 
 **Attention** 
-affilinet is right now merging with the AWIN affilinet marketing network, which at the moment provides no webservice infrastructure for controlling your advertiser account at.
+
+The affilinet platform is currently merging with the AWIN platform, which at the moment provides no webservice infrastructure for controlling your advertiser account at.
 Within the AWIN platform you can currently upload CSV files for automated management of your transactions.
 
-If you have any questions, please consult you key account manager within the affilinet company.
+If you have any questions, please consult your key account manager.
 
 **How to use this client implementation:**
 * Setup the project
