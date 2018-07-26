@@ -22,6 +22,6 @@ If you have any questions, please consult your key account manager.
         * proxy BL classes will appear under 'src.generated.java'
         * and the project is compiling
 * Replace your credentials and account data within the connection test
-    * execute the test to verify your connection
+    * execute the test to verify your connection with maven goal 'test'
 
 
