@@ -1,3 +1,5 @@
+import affilinet.advws.client.GetOrdersRequest;
+import affilinet.advws.client.GetOrdersResponse;
 import affilinet.advws.client.GetTransactionsRequest;
 import affilinet.advws.client.GetTransactionsResponse;
 
@@ -20,11 +22,14 @@ public class DummyRuntime {
     boolean processSuccessful = false;
         try {
 
-            GetTransactionsRequest request = client.BuildDummyTransactionsRequest();
-            GetTransactionsResponse response = client.getPort().getTransactions(request);
+            GetOrdersRequest request = client.BuildDummyTransactionsRequest();
+            GetOrdersResponse response = client.getPort().getOrders(request);
+
+//            GetTransactionsRequest request = client.BuildDummyTransactionsRequest();
+//            GetTransactionsResponse response = client.getPort().getTransactions(request);
 
             System.out.println("Total transactions matching the request-parameters: " + response.getTotalCount());
-            System.out.println("Number of transactions in this response: " + response.getTransactionCollection().getValue().getTransaction().size());
+            System.out.println("Number of transactions in this response: " + response.getOrderCollection().getValue().getOrder().size());
             processSuccessful=true;
         } catch (Exception ex) {
             System.out.println(ex);

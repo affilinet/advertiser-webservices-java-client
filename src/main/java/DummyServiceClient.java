@@ -41,14 +41,16 @@ public class DummyServiceClient {
     }
 
 
-    public GetTransactionsRequest BuildDummyTransactionsRequest() throws DatatypeConfigurationException {
-        GetTransactionsRequest request = new GetTransactionsRequest();
+
+    public GetOrdersRequest BuildDummyTransactionsRequest() throws DatatypeConfigurationException {
+        GetOrdersRequest request = new GetOrdersRequest();
         request.setPage(1);
         request.setPageSize(2);
         request.setProgramId(programId);
 
-        XMLGregorianCalendar startDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(2018, 5, 1, 0, 0, 0, 0, 0);
-        XMLGregorianCalendar endDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(2018, 6, 31, 0, 0, 0, 0, 0);
+        XMLGregorianCalendar startDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(2017, 4, 1, 0, 0, 0, 0, 0);
+        XMLGregorianCalendar endDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(2017, 6, 30, 0, 0, 0, 0, 0);
+
         request.setStartDate(startDate);
         request.setEndDate(endDate);
 

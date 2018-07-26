@@ -11,12 +11,14 @@ public class ConectionTest  {
     @Test
     public void VerifyConnection(){
 
-        String endponint="";
-        String username = "Your user name";
-        String password = "and password";
+
+        String endponint="https://advertiser-webservices.affili.net/V5/advertiserservice.svc";
+
+        String username = "";
+        String password = "";
         int programId= -1;
 
-        DummyServiceClient client = new DummyServiceClient(username,password,programId,Optional.empty());
+        DummyServiceClient client = new DummyServiceClient(username,password,programId, Optional.of(endponint));
 
         Assert.assertTrue( "Error during connection test, please check console output!",DummyRuntime.process(client));
 
