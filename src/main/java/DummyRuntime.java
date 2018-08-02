@@ -23,11 +23,7 @@ public class DummyRuntime {
         try {
 
             GetOrdersRequest request = client.BuildDummyTransactionsRequest();
-            GetOrdersResponse response = client.getPort().getOrders(request);
-
-//            GetTransactionsRequest request = client.BuildDummyTransactionsRequest();
-//            GetTransactionsResponse response = client.getPort().getTransactions(request);
-
+            GetOrdersResponse response = client.getPort().getOrders(request);        
             System.out.println("Total transactions matching the request-parameters: " + response.getTotalCount());
             System.out.println("Number of transactions in this response: " + response.getOrderCollection().getValue().getOrder().size());
             processSuccessful=true;
